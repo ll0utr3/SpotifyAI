@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Spotify Predictor</title>
+  <link rel="shortcut icon" type="image/ico" href="https://image.noelshack.com/fichiers/2019/13/2/1553602013-favicon-16x16.png" sizes="16x16"/>
+  <link rel="stylesheet" href={{url_for('static',filename='styles/css/style.css')}}>
+</head>
+    <body id="page-top" data-spy="scroll" data-target=".side-menu">
+      <nav class="side-menu">
+        <ul>
+          <li class="hidden active">
+          </li>
+            </a>
+          </li>
+        </ul>
+      </nav>
+            <center>
+              <b>
+            <h1>Spotify music genre predictor : </h1>
+              </b>
+            <h2>Rap, Electro, Sad Trap, Instrumental, Rock, Hip Hop</h2>
+            <h3>Type the song ID in this box (<a href=https://github.com/JeSuisRusse/SpotifyIA/wiki/ID-of-a-song>How ?</a>)</h3>
+            <form method="POST" action=/result-id>
+              <input type="text" name="track_id">
+              <br/>
+              <br/>
+              <input type="submit" value="Predict Now">
+            </form>
+
+            <br/>
+            <br/>
+            <h3>Type the song name in this box (he may be taking the wrong song)</h3>
+            <form method="POST" action=/result-name>
+              <input type="text" name="track_name">
+              <br/>
+              <br/>
+              <input type="submit" value="Predict Now">
+            </form>
+            <!--<a href="/results/" class="btn btn-lg btn-red">Predict Now<span class="ti-arrow-right"></span></a>-->
+                </center>
+          <h3 id='ad'>By JeSuisRusse</h3>
+</body>
+</html>
